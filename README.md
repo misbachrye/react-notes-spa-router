@@ -28,6 +28,43 @@ Sebuah *Single Page Application* (SPA) untuk mengelola catatan pribadi, dibangun
 * Node.js (disarankan versi LTS)
 * npm (biasanya terinstal bersama Node.js)
 
+## Struktur Proyek
+
+```bash
+.
+├── index.html                # Entry point HTML
+├── package.json              # Metadata proyek dan dependensi
+├── vite.config.js            # Konfigurasi Vite
+├── README.md                 # Dokumentasi proyek
+├── .gitignore                # File/folder yang diabaikan Git
+├── public/
+│   └── icons/                # Ikon-ikon SVG
+│       ├── archive.svg
+│       ├── delete.svg
+│       ├── save.svg
+│       └── unarchive.svg
+└── src/
+    ├── components/           # Komponen React UI
+    │   ├── Navigation.jsx
+    │   ├── NoteInput.jsx
+    │   ├── NoteItem.jsx
+    │   ├── NoteList.jsx
+    │   └── SearchBar.jsx
+    ├── pages/                # Komponen halaman (routing)
+    │   ├── AddPage.jsx
+    │   ├── ArchivePage.jsx
+    │   ├── DetailPage.jsx
+    │   ├── HomePage.jsx
+    │   └── NotFoundPage.jsx
+    ├── styles/
+    │   └── style.css         # Styling global
+    ├── utils/
+    │   ├── index.js          # Fungsi utilitas (showFormattedDate)
+    │   └── local-data.js     # Manajemen data lokal
+    ├── App.jsx               # Komponen utama (routing logic)
+    └── index.jsx             # Entry point aplikasi React
+```
+
 ## Cara Menjalankan
 
 1.  *Clone* repositori ini:
